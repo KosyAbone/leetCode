@@ -28,3 +28,28 @@ n == height.length
 
 */
 
+var maxArea = function(height) {
+    let front = 0;
+    let back = height.length - 1;
+    let maxAmount = -1
+    let amt = 0;
+    while(back > front){
+       
+       if(height[front] <= height[back]) {
+           amt =  height[front] * (back - front)
+           console.log('if', amt)
+           front++
+        }
+        else{
+            amt =  height[back] * (back - front)
+            console.log('else', amt)
+            back--
+        }
+        
+        if(amt > maxAmount){
+            maxAmount = amt
+      }
+    }
+    
+    return maxAmount
+};
