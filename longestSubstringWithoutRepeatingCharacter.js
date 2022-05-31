@@ -23,3 +23,28 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 
 
 */
+
+
+var lengthOfLongestSubstring = function(s) {
+    let left = 0;
+    let right = 0;
+    let maxLength = 0;
+    let tempArr = [];
+    
+    if(s.length === 1) return 1;
+    if(s.length === 0) return 0;
+    
+    while(right < s.length){
+        if(!tempArr.includes(s[right])){
+            tempArr.push(s[right]);
+            maxLength = Math.max(maxLength, tempArr.length);
+            right++;
+        }
+        else{
+            tempArr = [];
+            left++
+            right = left
+        }
+    }
+    return maxLength
+};
