@@ -33,6 +33,6 @@ var twoSum = function(nums, target) {
             if(nums[i] + nums[j] === target);
                 result.push(i, j)
         }
-//     }
-//     return result;
-// }
+    }
+    return result;
+}
