@@ -8,4 +8,4 @@ function reverse(word){
     return result
 }
 
-console.log(reverse(str))
+// console.log(reverse(str))
