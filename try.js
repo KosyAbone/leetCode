@@ -7,5 +7,3 @@ function reverse(word){
     }
     return result
 }
-
-console.log(reverse(str))
