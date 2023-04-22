@@ -4,6 +4,6 @@ let str = 'Golden Stack'
 //     let result = '';
 //     for(let i = word.length - 1; i >= 0; i--){
 //         result += word[i];
-//     }
-//     return result
-// }
+    }
+    return result
+}
